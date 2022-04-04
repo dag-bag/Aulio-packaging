@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Aulio-packaging/static/css/main.a4573b00.css",
+    "main.js": "/Aulio-packaging/static/js/main.e62b6a76.js",
+    "static/js/787.b4a3de74.chunk.js": "/Aulio-packaging/static/js/787.b4a3de74.chunk.js",
+    "static/media/nature.jpg": "/Aulio-packaging/static/media/nature.3d212e5fd3b278045520.jpg",
+    "static/media/Loading.gif": "/Aulio-packaging/static/media/Loading.6d98a7d4e261625bb733.gif",
+    "index.html": "/Aulio-packaging/index.html",
+    "main.a4573b00.css.map": "/Aulio-packaging/static/css/main.a4573b00.css.map",
+    "main.e62b6a76.js.map": "/Aulio-packaging/static/js/main.e62b6a76.js.map",
+    "787.b4a3de74.chunk.js.map": "/Aulio-packaging/static/js/787.b4a3de74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4573b00.css",
+    "static/js/main.e62b6a76.js"
+  ]
+}
