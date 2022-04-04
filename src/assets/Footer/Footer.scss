@@ -1,0 +1,64 @@
+@import "../colors";
+@import "../utils";
+footer {
+  background-image: linear-gradient(
+    to bottom,
+    #ff512f,
+    #fd6626,
+    #f9781e,
+    #f58919,
+    #f09819
+  );
+  @include HW(35rem, 100%);
+  .footerCol {
+    @include flex(center);
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .Box {
+      color: white;
+      //   border-right: 0.2rem solid white;
+      width: 40rem;
+      h3 {
+        padding-top: 3rem;
+        font-size: 2.1rem;
+      }
+      p {
+        font-size: 1.7rem;
+        font-weight: 400;
+      }
+      a {
+        background-color: white;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        color: black;
+        font-size: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 0.6rem;
+        &:hover {
+          background-color: rgb(173, 165, 165);
+        }
+      }
+      input {
+        padding: 1rem 2rem;
+        // border: 0.2rem solid black;
+        border-radius: 0.4rem;
+      }
+      .MapBtn {
+        margin-top: 2rem;
+        display: block;
+        width: 20rem;
+        margin: auto;
+        margin-top: 1rem;
+      }
+      .socialBtns {
+        margin-top: 4rem;
+        font-size: 4rem;
+        cursor: pointer;
+        &:hover {
+          color: rgb(173, 165, 165);
+        }
+      }
+    }
+  }
+}

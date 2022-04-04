@@ -1,0 +1,119 @@
+header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff512f), color-stop(51%, #f09819), to(#ff512f));
+  background-image: linear-gradient(to right, #ff512f 0%, #f09819 51%, #ff512f 100%);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8rem;
+  width: 100%;
+}
+
+header nav {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav h2 {
+  font-size: 4rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  position: relative;
+  margin: 0rem 2rem;
+}
+
+header nav ul li a {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+header nav ul li::after {
+  position: absoute;
+  content: "";
+  width: 0%;
+  height: 0.3rem;
+  background-color: #6d6cfd;
+  display: block;
+  bottom: -1.5rem;
+  left: 0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+header nav ul li:hover::after {
+  width: 100%;
+}
+
+header nav .tPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .tPart #search {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+header nav .tPart #getS {
+  margin-left: 1.5rem;
+  background-color: #6d6cfd;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  background: #d878dd;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+header nav .tPart #getS:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=navbar.css.map */

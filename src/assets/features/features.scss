@@ -1,0 +1,101 @@
+@import "../colors";
+@import "../utils";
+.features {
+  padding-top: 10rem;
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    color: #9da2ad;
+    font-size: 1.3rem;
+  }
+  .featuresCol {
+    padding-top: 5rem;
+    @include flex(center);
+    gap: 2rem;
+    flex-wrap: wrap;
+    .box {
+      //   position: relative;
+      transition: all 0.4s;
+      padding: 2rem;
+      @include flex(center);
+      flex-direction: column;
+      width: 25rem;
+      height: 50vh;
+      max-width: 20rem;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      border-radius: 0.5rem;
+      .i {
+        font-size: 8rem;
+      }
+      h3 {
+        font-size: 2rem;
+        padding: 1rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+      &:hover {
+        .i {
+          color: white !important;
+        }
+        p {
+          color: white;
+        }
+        background-position: right center; /* change the direction of the change here */
+        text-decoration: none;
+
+        box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+        background: #e2a9e5;
+        background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+        background: -webkit-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+        background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+        .bg {
+          z-index: -1;
+          opacity: 1;
+          background: #e2a9e5;
+          background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+          background: -webkit-linear-gradient(
+            -45deg,
+            #e2a9e5 15%,
+            #2b94e5 100%
+          );
+          background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+        }
+        color: #fff;
+      }
+      .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        pointer-events: none;
+        width: 100%;
+        height: 200%;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .features {
+    height: auto;
+  }
+}
+@media screen and (max-width: 446px) {
+  .features {
+    .box {
+      width: 25rem !important;
+    }
+  }
+}

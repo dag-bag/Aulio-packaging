@@ -1,0 +1,135 @@
+.products {
+  height: auto;
+  width: 100%;
+}
+
+.products h1 {
+  font-size: 3rem;
+}
+
+.products p {
+  color: #9da2ad;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.products .productCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products .productCol .box {
+  cursor: pointer;
+  height: 36rem;
+  width: 36rem;
+  background-color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.products .productCol .box .imgContainer {
+  position: relative;
+  overflow: hidden;
+  height: 25rem;
+  width: 36rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.products .productCol .box .imgContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.products .productCol .box .imgContainer::after {
+  content: "Buy Now";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  opacity: 0;
+}
+
+.products .productCol .box .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.products .productCol .box .content h5 {
+  font-size: 2rem;
+  height: 6rem;
+}
+
+.products .productCol .box .content p {
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+.products .productCol .box .content p span {
+  color: orange;
+}
+
+.products .productCol .box:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.products .productCol .box:hover .imgContainer::after {
+  opacity: 1;
+}
+
+.products .Mproduct {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff512f), color-stop(51%, #f09819), to(#ff512f));
+  background-image: linear-gradient(to right, #ff512f 0%, #f09819 51%, #ff512f 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  width: 20%;
+  margin: auto;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.products .Mproduct:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=products.css.map */

@@ -1,0 +1,80 @@
+@import "../colors";
+@import "../utils";
+
+.products {
+  @include HW(auto, 100%);
+  // margin: auto;
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    color: #9da2ad;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .productCol {
+    @include flex(center);
+    gap: 2rem;
+    flex-wrap: wrap;
+    .box {
+      cursor: pointer;
+      @include HW(36rem, 36rem);
+      background-color: white;
+      .imgContainer {
+        position: relative;
+        overflow: hidden;
+        @include HW(25rem, 36rem);
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+        &::after {
+          content: "Buy Now";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 2rem;
+          // color: white;
+          background-color: white;
+          border-radius: 0.5rem;
+          padding: 1rem;
+          opacity: 0;
+        }
+        transition: all 0.3s;
+      }
+      .content {
+        @include flex(center);
+        flex-direction: column;
+        h5 {
+          font-size: 2rem;
+          height: 6rem;
+        }
+        p {
+          padding: 1rem;
+          font-size: 1.7rem;
+          span {
+            color: orange;
+          }
+        }
+      }
+      transition: all 0.3s;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        .imgContainer {
+          // backgrosund: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .Mproduct {
+    @include btn(20%);
+    margin-top: 2rem;
+  }
+}

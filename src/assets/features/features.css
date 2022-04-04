@@ -1,0 +1,125 @@
+.features {
+  padding-top: 10rem;
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  text-align: center;
+}
+
+.features h1 {
+  font-size: 3rem;
+}
+
+.features p {
+  color: #9da2ad;
+  font-size: 1.3rem;
+}
+
+.features .featuresCol {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features .featuresCol .box {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25rem;
+  height: 50vh;
+  max-width: 20rem;
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 0.5rem;
+}
+
+.features .featuresCol .box .i {
+  font-size: 8rem;
+}
+
+.features .featuresCol .box h3 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.features .featuresCol .box p {
+  font-size: 1.3rem;
+}
+
+.features .featuresCol .box:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  text-decoration: none;
+  -webkit-box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  background: #e2a9e5;
+  background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+  color: #fff;
+}
+
+.features .featuresCol .box:hover .i {
+  color: white !important;
+}
+
+.features .featuresCol .box:hover p {
+  color: white;
+}
+
+.features .featuresCol .box:hover .bg {
+  z-index: -1;
+  opacity: 1;
+  background: #e2a9e5;
+  background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+}
+
+.features .featuresCol .box .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  pointer-events: none;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 965px) {
+  .features {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .features .box {
+    width: 25rem !important;
+  }
+}
+/*# sourceMappingURL=features.css.map */

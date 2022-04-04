@@ -1,0 +1,78 @@
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff512f), color-stop(#fd6626), color-stop(#f9781e), color-stop(#f58919), to(#f09819));
+  background-image: linear-gradient(to bottom, #ff512f, #fd6626, #f9781e, #f58919, #f09819);
+  height: 35rem;
+  width: 100%;
+}
+
+footer .footerCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer .footerCol .Box {
+  color: white;
+  width: 40rem;
+}
+
+footer .footerCol .Box h3 {
+  padding-top: 3rem;
+  font-size: 2.1rem;
+}
+
+footer .footerCol .Box p {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+footer .footerCol .Box a {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: black;
+  font-size: 1.5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0 0.6rem;
+}
+
+footer .footerCol .Box a:hover {
+  background-color: #ada5a5;
+}
+
+footer .footerCol .Box input {
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+}
+
+footer .footerCol .Box .MapBtn {
+  margin-top: 2rem;
+  display: block;
+  width: 20rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+footer .footerCol .Box .socialBtns {
+  margin-top: 4rem;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+footer .footerCol .Box .socialBtns:hover {
+  color: #ada5a5;
+}
+/*# sourceMappingURL=Footer.css.map */
