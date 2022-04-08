@@ -1,0 +1,24 @@
+@import "../colors";
+@import "../utils";
+.productDetailPage {
+  @include HW(100vh, 100%);
+  .detailCol {
+    @include HW(100vh, 80%);
+    margin: auto;
+    @include flex(center);
+    .leftCol {
+      flex: 1 1 40rem;
+      width: 40rem;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .rightCol {
+      flex: 1 1 55rem;
+      .text {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}

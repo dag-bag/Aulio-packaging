@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../assets/products/products.css";
+
+import { useNavigate } from "react-router-dom";
 export default function Products(props) {
+  let navigate = useNavigate();
+  const productPage = (e) => {
+    const id = e.currentTarget.id;
+    navigate(`/product-detail/${id}`);
+  };
   const [products, setProducts] = useState([]);
   useEffect(() => {
     const getPhotos = async () => {
@@ -27,13 +34,14 @@ export default function Products(props) {
         <p>We deliver best packaging for you.</p>
         <div className="productCol">
           {products.map((item) => {
+            const { alt, id, src } = item;
             return (
-              <div className="box" key={item.id}>
+              <div className="box" key={id} id={id} onClick={productPage}>
                 <div className="imgContainer">
-                  <img src={item.src.medium} alt={item.alt} />
+                  <img src={src.medium} alt={alt} />
                 </div>
                 <div className="content">
-                  <h5>{item.alt}</h5>
+                  <h5>{alt}</h5>
 
                   <p>
                     Price for packaging:

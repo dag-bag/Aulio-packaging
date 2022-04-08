@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/navbar/navbar.css";
 import { FaSistrix } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -10,7 +11,7 @@ export default function Navbar() {
           <h2>Aulia</h2>
           <ul>
             <li>
-              <a>Home</a>
+              <Link to={"/Aulio-packaging"}>Home</Link>
             </li>
             <li>
               <a>Customers</a>

@@ -7,6 +7,9 @@ import Features from "./components/Features";
 import Products from "./components/Products";
 import Nature from "./components/Nature";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import ProductDetail from "./components/ProductDetail";
 
 function App(props) {
   const [Loading, setLoading] = useState(false);
@@ -49,14 +52,28 @@ function App(props) {
 
   return (
     <div className="App">
-      <Navbar />
-      {Loading && <Spinner />}
-
-      <HomePage api={apiKey} Photo={Photo} />
-      <Features />
-      <Products api={apiKey} />
-      <Nature />
-      <Footer />
+      <Router>
+        <Navbar />
+        {Loading && <Spinner />}
+        <Routes>
+          <Route
+            path="/Aulio-packaging"
+            element={
+              <>
+                <HomePage api={apiKey} Photo={Photo} />
+                <Features />
+                <Products api={apiKey} />
+                <Nature />
+              </>
+            }
+          />
+          <Route
+            path="/product-detail/:id"
+            element={<ProductDetail key={apiKey} setLoading={setLoading} />}
+          />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
